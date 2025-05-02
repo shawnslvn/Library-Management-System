@@ -23,30 +23,35 @@ This project demonstrates the implementation of a Library Management System. Usi
   ### 2. CRUD Operations
 
 **Task 1. Create a New Book Record**
+
 -- "978-1-60129-456-2', 'To Kill a Mockingbird', 'Classic', 6.00, 'yes', 'Harper Lee', 'J.B. Lippincott & Co.')"
 
   ```sql
   INSERT CODE BELOW
   ```
 **Task 2. Update an Existing Member's Address**
+
 -- Objective update employee ID # C103's address to '125 Oak St'.
 
  ```sql
   INSERT CODE BELOW
   ```
 **Task 3. Delete a Record from the Issued Status Table**
+
 -- Objective: Delete the record with issued_id = 'IS121' from the issued_status table.
 
  ```sql
   INSERT CODE BELOW
   ```
 **Task 4. Retrieve All Books Issued by a Specific Employee**
+
 -- Objective: Select all books issued by the employee with emp_id = 'E101'.
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 5. List Members Who Have Issued More Than One Book**
+
 -- Objective: Use a GROUP BY to find members who have issued more than 1 book.
 
 ```sql
@@ -56,12 +61,14 @@ This project demonstrates the implementation of a Library Management System. Usi
 ### 3. CTAS Operations
 
 **Task 6. Create a Summary Table for Books and Issued Count**
+
 -- Objective create table that shows ISBN, Book Name, and Issued Count based on query results.
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 7. Create a Summary Table for Books with Rental Price Above a Certain Threshold**
+
 -- Objective create table that shows ISBN, Book Name, Rental Price (only above **INSERT RENTAL PRICE**)
 
 ```sql
@@ -71,12 +78,14 @@ This project demonstrates the implementation of a Library Management System. Usi
 ### 4. Advanced SQL Queries
 
 **Task 8. Retrieve All Books in a Specific Category**
+
 -- Objective: Return all books in the 'Classic' Category
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 9. Find Total Rental Income by Category**
+
 -- Objective: Use GROUP BY function to get rental income by category
 
 ```sql
@@ -88,6 +97,7 @@ This project demonstrates the implementation of a Library Management System. Usi
   INSERT CODE BELOW
   ```
 **Task 11. List Employees with their Branch Manager's Name and Their Branch Details**
+
 -- Objective: JOIN all necessary tables to provide Employee ID, Employee Name, Employee Position, Employee Salary, Manager Name, and all Branch Details
 
 ```sql
@@ -99,36 +109,42 @@ This project demonstrates the implementation of a Library Management System. Usi
   INSERT CODE BELOW
   ```
 **Task 13. Identify Members with Overdue Books**
+
 -- Objective: Identify memebers who have overdue books. Assume a 30 Day Return Period. Return Member ID, Member Name, Book Title, Issue Date, and Days Overdue. 
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 14. Update Book Status on Return**
+
 -- Objective: Create a Stored Procedure to update the status of a book to 'yes' when they are returned. Base it on entries in the return status table.
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 15. Create a Branch Performance Report**
+
 -- Objective: Create a performance report for each branch. Show the number of books issued, number returned, and total revenue generated from rentals.
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 16. Create a Table of Active Members**
+
 -- Objective: Create a new table that contains only active members. Active members being those who have been issued a book in the last 6 Months.
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 17. Find Employees with the Most Book Issues Processed**
+
 -- Objective: Find the top 3 Employees who have issued the most books. Display the Employee Name, Number of Books Processed, and Their Branch
 
 ```sql
   INSERT CODE BELOW
   ```
 **Task 18. Create a Stored Procedure to Manage Issuing Books**
+
 -- Objective: Write a procdedure that updates the status of a book based on its issuance. Should follow this logic:
 1. Procedure should take the Book ISBN as input parameter.
 2. Then check to see if the book is available (status = 'yes').
@@ -139,6 +155,7 @@ This project demonstrates the implementation of a Library Management System. Usi
   INSERT CODE BELOW
   ```
 **Task 19. Identify Overdue Books and Calculate the Fines Due**
+
 -- Objective: Determine what members have overdue books and calculate the fines they owe. Fines calculated at $.50/Day/. Table should include: Member ID, Number of Overdue Books, and Total Fines
 
 ```sql
