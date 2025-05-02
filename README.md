@@ -149,8 +149,8 @@ This project demonstrates the implementation of a Library Management System. Usi
 Through this project I have demonstrated my ability to create a database and manage the relationships between them. Along with that updating the table by inserting new data and deleting values that need to be deleted. While also generating reports and pulling information that stakeholders may ask for to drive business decisions. 
 
 Project Data from Zero Analyst. Link to their information below:
-- [**GitHub Link**:](https://github.com/najirh/Library-System-Management---P2.git)
-- [**LinkedIn**:](https://www.linkedin.com/in/najirr)
+- [**GitHub Link**](https://github.com/najirh/Library-System-Management---P2.git)
+- [**LinkedIn**](https://www.linkedin.com/in/najirr)
 
 
 
