@@ -422,8 +422,21 @@ $$
 -- Objective: Determine what members have overdue books and calculate the fines they owe. Fines calculated at $.50/Day/. Table should include: Member ID, Number of Overdue Books, and Total Fines
 
 ```sql
-  INSERT CODE BELOW
-  ```
+SELECT mem.member_id, 
+	mem.member_name, 
+	COUNT(member_id) AS books_overdue,
+	SUM((CURRENT_DATE - (iss.issued_date + INTERVAL '30 Days')::DATE) * 0.50) AS total_fines	
+FROM members AS mem
+JOIN issued_status AS iss
+	ON iss.issued_member_id = mem.member_id
+LEFT JOIN return_status AS ret
+	ON ret.issued_id = iss.issued_id
+JOIN books AS b
+	ON b.isbn = iss.issued_book_isbn
+WHERE return_date IS NULL 
+	AND CURRENT_DATE - (iss.issued_date + INTERVAL '30 Days')::DATE > 0
+GROUP BY 1,2
+```
 
 ## Conclusion
 Through this project I have demonstrated my ability to create a database and manage the relationships between them. Along with that updating the table by inserting new data and deleting values that need to be deleted. While also generating reports and pulling information that stakeholders may ask for to drive business decisions. 
